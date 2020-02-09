@@ -43,6 +43,7 @@ table {
     border-spacing: 0;
 }
 
+/* ======================================== */
 
 html, body {
     margin: 0px;
@@ -55,8 +56,8 @@ html, body {
 
 #main {
     width: 1000px;
-    background-color: #eee;
-    margin: auto;
+    background-color: #f8f8f8;
+    margin: 10px auto;
     text-align: center;
     padding: 30px;
     box-shadow: 0 5px 5px 2px #555;
@@ -111,9 +112,8 @@ html, body {
     color: white;
 }
 
-@media(max-width: 250px) {
+@media(max-width: 600px) {
     #main {
         width: 100%;
     }
 }
-
