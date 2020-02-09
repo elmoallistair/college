@@ -6,7 +6,7 @@ My Profile: https://www.freecodecamp.org/fccefbb9d14-e4dd-4a33-abec-0d2d41a3b64f
 My Code: https://codepen.io/elmoallistair/pen/qBdBgzJ <br>
 
 1.2 - Build a Survey Form (https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form) <br>
-My Code: <br>
+My Code: https://codepen.io/elmoallistair/pen/WNvbKLE <br>
 
 1.3 - Build a Product Landing Page (https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) <br>
 My Code: <br>
