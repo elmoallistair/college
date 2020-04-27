@@ -1,0 +1,105 @@
+1. Apa yang kamu ketahui tentang :
+1.1	Sejarah Linux
+Linux pada awalnya dibuat oleh seorang mahasiswa Finlandia yang bernama Linus Torvalds. Dulunya Linux merupakan proyek hobi yang diinspirasikan dari Minix, yaitu sistem UNIX kecil yang dikembangkan oleh Andrew Tanenbaum.
+Linux versi 0.01 dikerjakan sekitar bulan Agustus 1991. Kemudian pada tanggal 5 Oktober 1991, Linus mengumumkan versi resmi Linux, yaitu versi 0.02 yang hanya dapat menjalankan shell bash (GNU Bourne Again Shell) dan gcc (GNU C Compiler).
+Saat ini Linux adalah sistem UNIX yang sangat lengkap, bisa digunakan untuk jaringan, pengembangan software dan bahkan untuk pekerjaan sehari-hari. Linux sekarang merupakan alternatif sistem operasi yang jauh lebih murah jika dibandingkan dengan sistem operasi komersial.
+
+1.2	Kernel Linux
+Kernel Linux adalah kernel yang digunakan dalam sistem operasi GNU/Linux. Kernel ini merupakan turunan dari keluarga sistem operasi UNIX, dirilis dengan menggunakan lisensi GNU General Public License (GPL), dan dikembangkan oleh pemrogram di seluruh dunia. Linux merupakan contoh utama dari perangkat lunak bebas dan sumber terbuka.	
+
+1.3	Distribusi pada Linux
+Contoh-contoh distribusi Linux :
+	Ubuntu 
+	OpenSUSE
+	Fedora
+	BackTrack
+	Mandriva
+	Slackware
+	Debian
+	PCLinuxOS
+	Knoppix
+	Xandros
+	Sabayon
+	CentOS
+	Red Hat
+	ClearOS
+	Chrome OS
+	Gentoo Linux	
+
+1.4	Keuntungan dan Kekurangan Linux
+Kelebihan
+	Open Source
+	Lebih kebal virus
+	Aplikasi bawaan relatif lengkap	
+	Driver relatif lengkap
+	Software center yang relatif mumpuni
+Kekurangan	
+	Aplikasi relatif sedikit apabila dibandingkan dengan sistem operasi lain
+	Kurang cocok untuk gaming
+	Saat terjadi masalah pada OS Linux, sulit mengatasinya 
+	Dukungan software populer yang kurang	
+
+1.5	Distro Linux Kuliax
+Kuliax adalah sebuah distribusi Linux LiveCD yang dikembangkan oleh Kuliax Project untuk pendidikan di universitas. Distribusi ini awalnya berbasis Debian GNU/Linux dan Knoppix, kemudian setelah versi 6.0 pengembangannya diubah ke basis Debian GNU/Linux dan Debian Live. Kuliax dioptimasi ke arah penggunaan desktop Linux. Berkas image Kuliax dapat diunduh dan didistribusikan dengan bebas.
+
+2. Apa yang kalian ketahui tentang :
+2.1	Bahasa C pada Linux
+Bahasa pemrograman C merupakan salah satu bahasa pemrograman komputer. Dibuat pada tahun 1972 oleh Dennis Ritchie untuk Sistem Operasi Unix di Bell Telephone Laboratories. Meskipun bahasa C dibuat untuk memprogram sistem dan jaringan komputer namun bahasa ini juga sering digunakan dalam mengembangkan software aplikasi. C juga banyak dipakai oleh berbagai jenis platform sistem operasi dan arsitektur komputer, bahkan terdapat beberepa compiler yang sangat populer telah tersedia. C secara luar biasa mempengaruhi bahasa populer lainnya, terutama bahasa C++ yang merupakan extensi dari bahasa C.
+
+2.2	Cara penggunaan editor Vi pada Linux
+Keluar dari Vi:
+	:wq Keluar dan simpan perubahan yang telah dilakukan, ini ekivalen dengan perintah :wq
+	:q Keluar, selama tidak melakukan perubahan terhadap file
+	ZZ Keluar, dan menyimpan perubahan ketika terjadi perubahan
+	:q! Keluar dengan mengabaikan semua perubahan yang telah diakukan terhadap file
+Menggerakkan Kursor:
+	[ad]h Menggerakkan kursor ke kiri
+	j Menggerakkan kursor ke bawah
+	k Menggerakkan kursor ke atas
+	l Menggerakkan kursor ke kanan
+	w Menggerakkan kursor ke kata berikutnya
+	W Menggerakkan kursor ke pembatas kosong kata berikutnya
+	b Menggerakkan kursor ke ke awal kata
+	B Menggerakkan kursor ke ke awal pembatas kosong kata
+	e Menggerakkan kursor ke akhir kata
+	E Menggerakkan kursor ke akhir pembatas kosong kata
+	( Menggerakkan kursor ke kalimat sebelumnya
+	) Menggerakkan kursor ke kalimat berikutnya
+	{ Menggerakkan kursor keke paragraf sebelumnya
+	} Menggerakkan kursor ke paragraf berikutnya
+	0 Menggerakkan kursor ke awal baris
+	$ Menggerakkan kursor ke akhir baris
+	1G Menggerakkan kursor ke baris pertama dari isi file
+	G Menggerakkan kursor ke baris terakhir dari isi file
+	nG Menggerakkan kursor ke baris ke-n dari isi file
+	:n Menggerakkan kursor ke baris ke-n dari isi file
+	fc Menggerakkan kursor ke huruf c terdekat selanjutnya (huruf c dapat diganti oleh huruf apa saja yang pengin dicari)
+	Fc Menggerakkan kursor ke huruf c terdekat berikutnya (huruf c dapat diganti oleh huruf apa saja yang pengin dicari)
+	H Menggerakkan kursor ke atas tampilan layar
+	M Menggerakkan kursor ke tengah tampilan layar
+	L Menggerakkan kursor ke bawah tampilan layar
+Menghapus Teks:
+	x Hapus sebuah karakter pada posisi kursor
+	X Hapus sebuah karakter di sebelah kiri kursor
+	D Hapus seluruh karakter dari posisi kursor sampai akhir baris
+	dd Hapus satu baris pada kursor
+	:d Hapus satu baris pada kursor
+Lainnya: https://www.vim.org/docs.php
+
+2.3	Buatlah contoh program sederhana menggunakan bahasa C pada Linux Kuliax
+#include <stdio.h>
+int main() {
+    int i, n, t1 = 0, t2 = 1, nextTerm;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; ++i) {
+        printf("%d, ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+
+    return 0;
+}
