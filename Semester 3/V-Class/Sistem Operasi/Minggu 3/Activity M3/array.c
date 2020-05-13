@@ -1,3 +1,5 @@
+// Average of array's elements
+
 #include <stdio.h>
 
 int main() {
