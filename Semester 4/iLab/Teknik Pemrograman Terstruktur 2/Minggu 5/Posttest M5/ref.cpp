@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int x = 55;
-    int r = x;
+    int &r = x;
 
     x = 10;
     cout << "x = " << x << endl;
