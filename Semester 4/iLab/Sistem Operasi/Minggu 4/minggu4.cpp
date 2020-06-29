@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 int pilihan;
 int biodata();
@@ -21,20 +20,15 @@ int main(){
 
     switch(pilihan){
         case 1 : biodata();
-            getch();
             goto menu;
         case 2 : grade();
-            getch();
             goto menu;
         case 3 : beratbadan();
-            getch();
             goto menu;
         case 4 : looping();
-            getch();
             goto menu;
         case 5 : printf("Terima Kasih.\n");
         default : printf("Pilihan Anda Salah\n");
-            getch();
             goto menu;
     }
 }
