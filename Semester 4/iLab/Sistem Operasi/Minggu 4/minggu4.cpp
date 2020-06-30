@@ -37,7 +37,7 @@ int biodata() {
     char nama[50], npm[8], kelas[10];
     printf("\n----------Program Biodata---------\n");
     printf("Masukkan Nama Anda : ");
-    scanf(" %s", &nama);
+    scanf(" %[^\n]s", &nama);
     printf("Masukkan NPM Anda : ");
     scanf(" %s", &npm);
     printf("Masukkan Kelas Anda : ");
