@@ -75,9 +75,10 @@ int grade() {
     } else {
         if( total >= 40 ){
             printf("Grade D");
+            printf("\nMaaf, anda tidak lulus.");
         } else {
             printf("Grade E");       
-        printf("\nMaaf, anda tidak lulus.");
+            printf("\nMaaf, anda tidak lulus.");
         }
     }
     return 0;
