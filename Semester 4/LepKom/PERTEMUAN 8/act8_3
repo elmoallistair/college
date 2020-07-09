@@ -1,0 +1,20 @@
+SET ECHO OFF
+SET VERIFY OFF
+SET SERVEROUTPUT ON
+
+ACCEPT p_emp_ename PROMT 'INPUT EMPLOYEE NAME : '
+ACCEPT p_emp_job PROMT 'INPUT JOB : '
+ACCEPT p_emp_deptno PROMT 'INPUT DEPT NO : '
+
+DECLARE
+    v_emp_empno emp.epno%TYPE;
+    v_emp_sal emp.sal%TYPE;
+
+BEGIN
+    SELECT MIN(empno) - 10 INTO v_emp_empno FROM emp;
+    SELECT MAX(sal) + 250 INTO v_emp_sal FROM emp;
+
+    INSERT INTO emp(empno, ename, job, sal, deptno)
+    VALUES (v_emp_empno, '&p_emp_name', '&p_emp_job', v_emp_sal, '&p_emp_deptno');
+END;
+/

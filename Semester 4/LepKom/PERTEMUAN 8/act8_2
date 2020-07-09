@@ -1,0 +1,9 @@
+SET SERVEROUTPUT ON
+DECLARE
+    v_emp_ename emp.ename%TYPE;
+
+BEGIN
+    SELECT ename INTO v_emp_ename FROM Emp WHERE sal BETWEEN 900 AND 1000
+    DBMS_OUTPUT.PUT_LINE('Pegawai yang memiliki gaji diantar 900 dan 1000 adalah ' || v_emp_ename);
+    END;
+/

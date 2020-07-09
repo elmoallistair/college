@@ -1,0 +1,19 @@
+CREATE TABLE messages (RESULTS VARCHAR(60 )
+SET SERVEROUTPUT ON
+
+DECLARE
+    num INTEGER
+
+BEGIN
+    num := 0;
+    LOOP
+        num := num + 1;
+        IF num = 6 OR num = 8 THEN NULL
+            ELSE INSERT INTO messages (RESULT)
+            VALUES (num);
+            DBMS_OUTPUT.PUT_LINE(num);
+        END IF;
+        EXIT WHEN K = 10;
+    END LOOP;
+END;
+/

@@ -1,0 +1,5 @@
+SET SERVEROUTPUT ON
+BEGIN
+    UPDATE emp SET sal = sal + 200 WHERE deptno > 10;
+END;
+/

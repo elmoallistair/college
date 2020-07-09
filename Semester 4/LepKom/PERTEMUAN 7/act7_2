@@ -1,0 +1,3 @@
+ALTER TABLE messages ADD stars VARCHAR2(50);
+UPDATE messages SET stars = '*';
+SELECT * FROM messages
