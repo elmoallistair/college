@@ -1,0 +1,108 @@
+-- Prelab 1.1 Pengenalan Java
+
+Nama Java, terinspirasi dari secangkir kopi yang diminum berasal dari Pulau Jawa, Indonesia
+Benar
+
+Java dapat berjalan di sistem operasi yang berbeda-beda, termasuk kedalam pemrograman OOP, dan juga memiliki library yang lengkap. Hal tersebut merupakan beberapa kelebihan dari Java
+Benar
+
+Project pertama bagi tim yang dipimpin oleh James Gosling dari Sun Microsystem dinamakan
+Green Project
+
+Apa penyebab James Gosling dan timnya mengganti nama OAK menjadi Java ?
+Telah terdaftar sebagai merek dagang dari perusahaan Oak Technology
+
+Bahasa pemrograman Java, termasuk kedalam bahasa pemrograman terstruktur.
+Salah
+
+
+-- Prelab 1.2 Edisi Java
+
+Java Card menyediakan lingkungan pengembangan yang kaya akan fitur, stabil, aman, dan cross-platform. 
+Salah 
+
+Adam ingin membuat suatu aplikasi pada smartphone android. Maka, edisi java apa yang akan digunakan oleh Adam ?
+Java Micro Edition (JME)
+
+JavaBeans, Java Servlets, dan JavaServer Pages dapat digunakan jika kita menggunakan edisi Java pada Java Card.
+Salah
+
+Kartu e-toll dan e-money merupakan contoh penerapan dari edisi Java, yaitu Java Micro Edition.
+Salah 
+
+Pada Java edisi apakah yang termasuk sebagai paket-paket dasar bahasa Java ?
+Java Standard Edition (JSE)
+
+
+-- Prelab 1.3 JDK (Java Develoment Kit)
+
+JDK atau Java Development Kit  memberikan semua tools, executables, binaries yang diperlukan untuk debugging dan mengeksekusi sebuah program Java
+Benar 
+
+Adam mendapatkan tugas kuliah Pemrograman Berorientasi Objek. Dosen yang mengajar, meminta Adam untuk mendownload JDK untuk dapat menggunakan bahasa pemrograman Java. JDK yang ingin Adam download yaitu Java Standard Edition. URL apa yang dapat Adam gunakan untuk mendownload JDK tersebut?
+https://www.oracle.com/java/technologies/javase-downloads.html.
+
+Apakah keunggulan dari Java Micro Edition atau JME ?
+Dalam portabilitas dan menggunakan sekumpulan paket yang lebih kecil
+
+Smart card dan sensor merupakan beberapa komponen utama JDK. 
+Salah
+
+Kompilator (javac) merupakan salah satu komponen utama JDK. 
+Benar
+
+
+-- Prelab 1.4 Cara Kerja
+
+File .java merupakan source code yang dapat dimengerti oleh manusia dan mesin.
+Salah
+
+IDE memiliki tampilan command line interface, sehingga kita  harus mengetahui perintah yang akan digunakan. 
+CMD
+
+Aplikasi apa yang digunakan untuk compile dan run program dengan tampilan command line interface?
+CMD
+
+Jika kita ingin compile program Java dengan nama Penjumlahan, lalu kita ketik perintah perintah javac Penjumlahan.java, maka apa yang akan terjadi? 
+Tidak muncul error dan menghasilkan file Penjumlahan.class 
+
+Nama file pada source code akan sama dengan nama file byte code, hanya extention-nya saja yang berbeda. 
+Benar
+
+
+-- Prelab 1.5 IDE (Integrated Development Environment)
+
+Adi memiliki suatu program yang cukup kompleks untuk tugas akhirnya. Sehingga, Adi menggunakan IDE atau Integrated Development Environment untuk membuat program tersebut. 
+Benar
+
+IDE adalah singkatan dari integrated development environment, yang memberikan fasilitas secara lengkap untuk proses pengembangan software. 
+Benar
+
+Manakah dari pilihan berikut ini yang TIDAK akan ditemukan di IDE?
+Picture editor 
+
+Debugger adalah program di dalam IDE yang digunakan untuk mendeteksi kesalahan. IDE memeriksa kode pemrograman menggunakan …
+Debugger 
+
+Apakah output dari kode program berikut: System.out.print(“Hello world! Hello world!");
+Hello world! Hello world!
+
+
+-- Prelab 1.6 Keyword dan Identifier
+
+Berikut ini merupakan daftar dari keyword Java, kecuali… 
+Data
+
+Keyword adalah kata khusus yang sudah disediakan oleh Java untuk tujuan tertentu. Beberapa contohnya seperti public, static, dan void.
+Benar
+
+Perhatikan potongan program berikut !
+Public class static {
+Potongan program tersebut akan berhasil membuat suatu kelas dengan nama static.
+Salah
+
+Continue dan default merupakan dua contoh dari keyword pada Java. 
+Benar
+
+Untuk menamakan suatu variabel pada program Java, kita dapat menggunakan keyword pada Java. Sehingga nama variabel akan dikenal oleh compiler.
+Salah
