@@ -1,5 +1,0 @@
-Lab Activity 1. Pengenalan Java
-
-- Perulangan.class 
-- Menggunakan new sebagai nama kelas 
-- Pada baris ketiga diubah menjadi System.out.println("Ini program sederhana Java");
