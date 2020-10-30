@@ -24,16 +24,14 @@ class PBO_Vclass_1 {
 
     static void soal_2() {
         Scanner input = new Scanner(System.in);
-
         System.out.print("Input start temp in C : ");
         int C_start = input.nextInt();
-        
         System.out.print("Input stop temp in C  : ");
         int C_stop = input.nextInt();
-
         double C_curr = C_start, R_curr, F_curr, K_curr;
-        System.out.println("|   C   |   R   |   F   |   K   |");
-        System.out.println("|-------------------------------|");
+
+        System.out.println("|   C   |   R   |   F   |   K    |");
+        System.out.println("|--------------------------------|");
         for (int i=C_start; i <= C_stop; i++) {
             R_curr = C_curr * 4/5;
             F_curr = C_curr * 9/5 + 32;
@@ -41,7 +39,7 @@ class PBO_Vclass_1 {
             System.out.print("|" + String.format("%6s ", String.valueOf(C_curr)));
             System.out.print("|" + String.format("%6s ", String.valueOf(R_curr)));
             System.out.print("|" + String.format("%6s ", String.valueOf(F_curr)));
-            System.out.print("|" + String.format("%6s ", String.valueOf(K_curr)) + "|");
+            System.out.print("|" + String.format("%7s ", String.valueOf(K_curr)) + "|");
             System.out.print("\n");
 
             C_curr++;
@@ -55,30 +53,26 @@ class PBO_Vclass_1 {
         double[] playerCurrSal = new double[20];
         double[] playerTotSal = new double[20];
 
-        for (int i=0; i<5; i++) {
+        for (int i=0; i<20; i++) {
             System.out.println("\n--- Player " + (i+1) +  " ---");
             System.out.print("Input player name   : ");
             playerName[i] = input.nextLine();
-            
+
             System.out.print("Input player salary : ");
             playerCurrSal[i] = input.nextDouble();
-
             currSal = playerCurrSal[i];
             bonus = (currSal > 20000000) ? 0 : (
                         (currSal > 15000000) ? 0.5 : (
                             (currSal > 10000000) ? 0.1 : 0.2));
             playerTotSal[i] = currSal + currSal * bonus;
             System.out.println("Total player salary : " + playerTotSal[i]);
-
             input.nextLine();
         }
-        
+
         double sumCurrSal = Arrays.stream(playerCurrSal).sum();
         double sumTotSal  = Arrays.stream(playerTotSal).sum();
-
         System.out.println("\nTotal player salary         : " + sumCurrSal);
         System.out.println("Total player salary + bonus : " + sumTotSal);
-        
     }
 
     public static void main(String[] args) {
