@@ -1,0 +1,5 @@
+Msg 1801, Level 16, State 3, Server ubuntu, Line 1
+Database 'hr' already exists. Choose a different database name.
+Changed database context to 'hr'.
+Msg 2714, Level 16, State 6, Server ubuntu, Line 4
+There is already an object named 'regions' in the database.
