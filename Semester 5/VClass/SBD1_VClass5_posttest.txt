@@ -1,0 +1,26 @@
+1. 
+Tujuan Normalisasi Database adalah untuk menghilangkan dan mengurangi redudansi data dan tujuan yang kedua adalah memastikan dependensi data (Data berada pada tabel yang tepat).
+Jika data dalam database tersebut belum di normalisasi maka akan terjadi 3 kemungkinan yang akan merugikan sistem secara keseluruhan.
+
+2. 
+Tahapan Normalisasi dimulai dari tahap ringan (1NF) hingga paling ketat (5NF). Biasanya hanya sampai pada tingkat 3NF atau BCNF karena sudah cukup memadai untuk menghasilkan tabel-tabel yang berkualitas baik. Urutannya : 1NF, 2NF, 3NF, BCNF, 4 NF, 5NF
+
+- Bentuk Tidak Normal
+- Bentuk Normal Pertama (1NF) : Menghilangkan Perulangan Grup
+- Bentuk Normal Kedua (2NF) : Menghilangkan Ketergantungan Parsial
+- Bentuk Normal Ketiga (3NF) : Menghilangkan Ketergantungan Transitif
+- Bentuk Normal Boyce-Code Form (BCNF) : Menghilangkan anomali-anomali hasil dari ketergantungan fungsional
+- Bentuk Normal Keempat (4NF) : Menghilangkan ketergantungan multivalue
+- Bentuk Normal Kelima : Menghilangkan anomali-anomali yang tersisa
+
+3.
+Normalisasi 1NF
+Bentuk normal 1NF terpenuhi jika sebuah tabel tidak memiliki atribut bernilai banyak (multivalued attribute), atribut composite atau kombinasinya dalam domain data yang sama.
+
+
+Normalisasi 2NF
+Bentuk Normal 2NF terpenuhi dalam sebuah tabel jika telah memenuhi bentuk 1NF, dan semua atribut selain primary key, secara utuh memiliki Functional dependency pada primary key.
+
+
+Normalisasi 3NF
+Bentuk normal 3NF terpenuhi jika telah memenuhi bentuk 2NF, dan jika tidak ada atribut non primary key yang memiliki ketergantungan terhadap atribut non primary key yang lainnya.
